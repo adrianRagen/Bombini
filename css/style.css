@@ -1,0 +1,648 @@
+
+
+
+/* CSS Reset */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+}
+
+
+ul{
+  list-style: none;
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+
+/* Utilities */
+
+.container{
+  max-width: 80%;
+  margin: auto;
+}
+
+.btn-box{
+  width: 100%;
+}
+
+.btn{
+  width: 100%;
+  border-radius: 15px;
+  padding: 15px 15px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn-full{
+   background: rgb(252, 229, 127);
+   color: #333;
+   border: none;
+}
+
+.btn-dark{
+  background-color: rgb(61, 61, 61);
+  color: #fff;
+
+}
+
+.btn-dark a{
+  color: #fff;
+}
+
+.btn-box button{
+  margin-bottom: -20px;
+}
+
+
+/* Logo */
+
+.logo{
+  display: flex;
+  align-items: flex-end;
+  margin-top: 15px;
+}
+
+
+.logo img{
+  height: 50px;
+
+}
+
+.logo h3{
+  font-size: 2.0rem;
+}
+
+/* Nav Bar */
+
+.navbar ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0px;
+  font-size: 1.3rem;
+  
+}
+
+.navbar ul li a:hover{
+  padding-bottom: 8px;
+  border-bottom: 3px solid #fff;
+}
+
+.current{
+  padding-bottom: 8px;
+  border-bottom: 1px solid #333;
+}
+
+/* Header */
+
+.header{
+  padding-top: 15px;
+  background-color: rgba(255, 208, 0, 0.527);
+  color: rgb(107, 105, 105);
+  border-bottom: 5px solid #fff;
+  height: 25vh
+}
+
+/* Main */
+
+.main{
+  height: 75%;
+  background: linear-gradient(rgba(85, 85, 85, 0.918), rgba(116, 116, 116, 0.555)), url('/css/img/pexels-jonathan-borba-5379707.jpg') no-repeat center center/cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow: hidden;
+  object-fit: cover;
+
+}
+
+/* Whats On */
+
+.whats-on-section{
+  background: linear-gradient(rgba(85, 85, 85, 0.918), rgba(116, 116, 116, 0.555)), url('/css/img/pexels-jonathan-borba-5379707.jpg') no-repeat center center/cover;
+  padding: 5% 10%;
+  color: #fff;
+}
+
+.whats-on-container{
+  margin-bottom: 80px;
+  
+}
+/*  */
+
+
+.img-box img{
+  width: 100%;
+  height: 100%;
+}
+
+.text-box{
+  padding: 25px;
+  background-color: #333;
+  color: #fff;
+}
+
+.whats-on-item:nth-child(even)
+.text-box{
+  background-color: rgb(110, 110, 110);
+}
+
+.whats-on-item:nth-child(even) h3{
+  color: rgb(252, 229, 127);
+}
+
+.text-box h3{
+  padding-bottom: 25px;
+}
+
+.whats-on-container h3{
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 2em;
+
+}
+
+.whats-on-container .btn{
+  margin-top: 25px;
+}
+#whats-on-text{
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+
+
+
+
+
+/* -------------Grid------------------ */
+
+.main-container {
+  margin: 1.6rem 0.8rem;
+}
+
+.grid-container {
+  margin: auto;
+  display: grid;
+  grid-gap: 1.1312rem;
+  grid-template-columns: repeat(auto-fit, 12.8rem);
+  grid-auto-rows: 12.8rem;
+  grid-auto-flow: dense;
+  justify-content: center;
+  max-width: 75em;
+}
+
+.card {
+  grid-row: auto/span 1;
+  grid-column: auto/span 1;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.877);
+}
+.card h1, .card h2, .card h3, .card h4, .card p {
+  margin-top: 0;
+  font-weight: normal;
+}
+.card__image {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  
+}
+.card__image img {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card__side-by-side {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.card__side-by-side--m {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.card__side-by-side--m img {
+  min-height: auto;
+}
+.card__content {
+  padding: 1.6rem;
+}
+.card__button {
+  margin: 1.6rem 0;
+  text-align: center;
+  padding: 0.8rem 1.6rem;
+  background: none;
+  border: 0.5px solid #777;
+  border-radius: 2px;
+}
+.card__button:hover {
+  border-color: #d099a0;
+}
+.card--featured {
+  grid-row: auto/span 3;
+  grid-column: auto/span 2;
+}
+.card--2x {
+  grid-row: auto/span 2;
+  grid-column: auto/span 2;
+  color: rgb(0, 0, 0);
+}
+.card--vertical {
+  grid-row: auto/span 2;
+}
+.card--horizontal {
+  grid-column: auto/span 2;
+}
+.card--frameless {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.padding-large {
+  padding: 3.2rem;
+}
+.padding-large--l {
+  padding: 1.6rem;
+}
+
+.big-script {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.3em;
+  line-height: 1.15em;
+  text-align: center;
+}
+
+.big-script img{
+  height: 50px;
+  margin-top: 30px;
+}
+
+.big-script p {
+  margin: 35px 0px;
+  font-size: 2rem;
+  line-height: 1em;
+}
+
+/* About Page */
+
+.about-section{
+  
+  justify-items: center;
+  background: linear-gradient(rgba(85, 85, 85, 0.966), rgba(116, 116, 116, 0.788)), url('/css/img/pexels-jonathan-borba-5379707.jpg') no-repeat center center/cover;
+  padding: 10% 10%;
+  color: #fff;
+  
+}
+
+.text-area{
+  padding-right: 20px;
+}
+
+.text-area h2{
+  padding-bottom: 10px;
+}
+
+.flex-img{
+  display: flex;
+  padding-top: 25px;
+}
+
+.flex-box img{
+  object-fit: cover;
+  width: 100%;
+
+}
+
+
+/* Footer */
+
+.main-time{
+  font-size: .5rem;
+}
+
+.main-time h3{
+  text-decoration: underline;
+}
+
+footer{
+  background-color: #333;
+}
+
+footer a{
+  color:rgb(252, 229, 127) ;
+}
+footer{
+  color: #fff;
+}
+
+.main-footer{
+  /* display: flex; */
+  text-align: center;
+}
+
+.box{
+  width: 100%;
+  align-self: center;
+  padding: 15px 0px;
+  margin: auto;
+}
+
+.box li{
+  display: inline;
+  margin-right: 30px;
+}
+
+.box img{
+  height: 30px;
+}
+
+.box i{
+  font-size: 30px;
+}
+
+/* Section: Food */
+
+.section-food,
+.section-drink{
+
+  padding-top: 35px;
+}
+
+.section-drink{
+  padding-bottom: 35px;
+}
+
+.section-food h3,
+.section-drink h3{
+ font-size: 2rem;
+ color: rgb(252, 229, 127);
+}
+
+
+.food-text{
+  width: 100%;
+  color: #fff;
+  padding: 0px 20px;
+}
+
+
+
+/* Menu Section: Grid */
+
+.food-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  grid-gap: .5rem;
+  padding: 0 20px;
+  margin: 20px auto;
+  
+}
+
+.item img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 1px 3px 3px rgba(49, 49, 49, 0.877);
+}
+
+.section-food,
+.section-drink{
+  padding-top: 35px;
+}
+
+
+.drink-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  margin: 20px auto;
+
+}
+
+.drink-grid .item{
+  height: 150px;
+  width: auto;
+  margin: auto;
+ 
+}
+
+.drink-grid img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-time{
+  background-color: rgb(252, 229, 127);
+  border-top: 5px solid #333;
+  border-bottom: 5px solid #333;
+}
+
+
+/* Form */
+
+
+
+#form-section{
+  margin: 24px auto;
+  /* border-radius: 30px; */
+  box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.877);
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.822);
+
+}
+
+#form-section h5{
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+}
+#form-section p{
+  font-size: 1.3rem;
+  padding: 15px 0px;
+  color: rgb(206, 168, 0);
+}
+
+
+#form-section label{
+  font-size: 1.1rem;
+  color: rgb(102, 102, 102);
+  
+}
+
+.contact-information{
+  background-color: rgb(212, 212, 212);
+  border: none;
+  border-radius: 7px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  display: block;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  color:  rgb(156, 156, 156);
+}
+
+#form-section .btn{
+  margin-bottom: 40px;
+  border: none;
+  background-color:rgb(252, 229, 127) ;
+}
+
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active,
+
+select:-webkit-autofill,
+select:-webkit-autofill:hover, 
+select:-webkit-autofill:focus, 
+select:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px rgb(219, 219, 219) inset !important;
+}
+
+
+#post-code{
+  width: 50% !important;
+}
+
+.check-group{
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+textarea{
+  border: 1px solid #333;
+  border-radius: 7px;
+  margin-top: 6px;
+  width: 100%;
+  height: 120px;
+  display: block;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  color:  rgb(156, 156, 156);
+  margin-bottom: 20px;
+}
+
+
+
+
+ /*--------- Desktop -------- */
+
+@media only screen and (min-width: 767px) {
+ 
+  .container{
+    max-width: 70%;
+    margin: auto;
+  }
+
+  .whats-on-item{
+    display: flex;
+    padding-bottom: 5px;
+  }
+
+  .section-food,
+.section-drink{
+  display: flex;
+  padding-top: 35px;
+}
+
+.main-footer{
+  display: flex;
+  text-align: center;
+}
+
+.about-section{
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+}
+
+  
+  label{
+    display:inline-block;
+  }
+
+  .input-group{
+    display: flex;
+  }
+
+  .input-group label{
+    width: 50%;
+  }
+  
+  .input-group input{
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 413px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .card {
+    min-height: 12.8rem;
+  }
+}
+@media (min-width: 627px) {
+  .grid-container {
+    grid-gap: 1.6rem;
+  }
+
+  .card__side-by-side--m {
+    flex-flow: row nowrap;
+  }
+  .card__side-by-side--m img {
+    min-height: 100%;
+  }
+  .card--featured {
+    grid-row: auto/span 2;
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 836px) {
+  .padding-large--l {
+    padding: 3.2rem;
+  }
+}
+
+
+
+
+
+
+
+

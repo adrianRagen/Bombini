@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bombini</title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo container">
+      <h3 id="logo-text">Bombini</h3>
+      <img src="/css/img/logo's/left-facing-yellow.png" alt="bombini Logo">
+    </div>
+    <nav class="navbar">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="whatsOn.html">What's On</a></li>
+          <li><a class="current" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="contact-section main">
+<!-- *************************TEST CODE******************* -->
+
+
+<form id="form-section" class="container">
+  <h5>Contact Information</h5>
+
+
+  <div class="input-group">
+    <label for="name">Full Name</label>
+    <input class="contact-information" type="text" id="name" name="name">
+  </div>
+
+  <div class="input-group">
+    <label for="email">Email Address</label>
+    <input class="contact-information"  type="email" id="email" name="email">
+  </div>
+
+  <div class="input-group">
+    <label for="number">Phone Number</label>
+    <input class="contact-information"  type="tel" id="number" name="number">
+  </div>
+
+  <div class="input-group">
+    <label for="address">Street Address</label>
+    <input class="contact-information"  type="text" id="address" name="address">
+  </div>
+
+  <div class="input-group">
+    <label for="city">City</label>
+    <input class="contact-information"  type="text" id="city" name="city">
+  </div>
+
+  <div class="input-group">
+    <label for="state">State</label>
+    <select  class="contact-information" name="state" id="state">
+      <option disabled selected>Choose State</option>
+      <option value="NSW">NSW</option>
+      <option value="VIC">VIC</option>
+      <option value="QLD">QLD</option>
+      <option value="SA">SA</option>
+      <option value="WA">WA</option>
+      <option value="NT">NT</option>
+      <option value="ACT">ACT</option>
+    </select>
+  </div>
+
+
+  <div class="input-group">
+    <label id="post-code" for="post-code">Post Code</label>
+    <input class="contact-information"  type="number" id="post-code" name="post-code">
+  </div>
+
+
+  
+  <div style="border-bottom: 2px solid black;
+  margin-bottom: 15px;"></div>
+  <!-- !!!----- Newsletter Section -----!!! -->
+
+    <h5>Get in touch</h5>
+    <p>Stay up to date with the latest news and events</p>
+
+
+    <input class="check-group" type="checkbox" id="email" name="email">
+    <label for="email">Subscribe to our Newsletter</label><br>
+
+    <input class="check-group" type="checkbox" id="email" name="email">
+    <label for="email">Exclusive offers</label><br>
+
+    <input class="check-group" type="checkbox" id="email" name="email">
+    <label for="email">No, Thank you</label>
+
+    <p>Were did you hear about us?</p>
+
+    <input class="check-group" type="radio">
+    <label for="email">Internet</label><br>
+
+    <input class="check-group" type="radio">
+    <label for="email">Word of mouth</label>
+
+
+    <p>Please type your message below...</p>
+    <textarea name="" id="" cols="30" rows="10" placeholder="We will be in touch..."></textarea>
+
+
+    <button class="btn">Sign Up</button>
+</form>
+
+<!-- ****************************************************** -->
+  </main>
+  <footer>
+    <div class="main-footer about-footer">
+      <div class="box"></div>
+      <div class="box">
+       Developed By Wyatt |  &copy; 2021 Bombini Sydney Olympic Park
+      </div>
+      <div class="box">
+        <ul>
+          <li><a href="#">
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="#">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+          <li><a href="#">
+            <img src="/css/img/logo's/Right-facing-yellow.png" alt="">
+          </a></li>
+        </ul>
+    </div>
+  </footer>
+</body>
+</html>
